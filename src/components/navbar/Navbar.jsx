@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* 2nd part middle section */}
-      <div className="flex  items-center justify-center relative shadow-sm rounded-full shadow-gray-600 border">
+      <div className="flex  cursor-pointer items-center justify-center relative shadow-sm rounded-full shadow-gray-600 border hover:shadow-lg">
         <div className="py-4 w-[20rem] m-3 rounded-full outline-0"></div>
         <div className="flex justify-between  absolute w-full pr-16 pl-2">
           <button className=" w-full font-semibold ">Anywhere </button>
@@ -29,24 +29,26 @@ const Navbar = () => {
             {" "}
             Any week{" "}
           </button>
-          <button className="text-gray-500  w-full"> Add guests</button>
+          <button className="text-gray-500  w-full "> Add guests</button>
         </div>
-        <button className="bg-[#ff5a60] p-2 mr-1 color-white rounded-full">
-          <CgSearch className="text-white" />
+        <button className="bg-[#ff5a60] p-2 mr-2 color-white rounded-full  cursor-pointer">
+          <CgSearch className="text-white " />
         </button>
       </div>
 
       {/* 3rd part end section */}
-      <div className="flex items-center pr-2">
+      <div className="flex items-center pr-2 font-semibold text-gray-600">
         <div className="flex items-center mr-2">
-          <button className="mr-2 ">Airbnb your home</button>
+          <button className="mr-2 hover:bg-gray-100  shadow-md p-3 rounded-full">
+            Airbnb your home
+          </button>
           <button>
-            <TbWorld />
+            <TbWorld className="mx-1 hover:bg-gray-300 shadow-lg rounded-full" />
           </button>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-4 border rounded-full m-5 py-4 pl-4 cursor-pointer shadow hover:shadow-lg">
           <IoIosMenu />
-          <FaUser />
+          <FaUser className="mr-4" />
         </div>
       </div>
     </div>
