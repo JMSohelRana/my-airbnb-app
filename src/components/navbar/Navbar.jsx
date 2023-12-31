@@ -7,7 +7,7 @@ import { CgSearch } from "react-icons/cg";
 
 const Navbar = () => {
   return (
-    <div className="border-b flex items-center justify-between">
+    <div className="border-b flex items-center justify-between sm:mx-6 md:mx-10 lg:mx-12">
       {/* 1st part logo section */}
       <div className="flex h-20 w-20">
         {" "}
