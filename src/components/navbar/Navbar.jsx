@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* 2nd part middle section */}
-      <div className="flex  cursor-pointer items-center justify-center relative shadow-sm rounded-full shadow-gray-600 border hover:shadow-lg">
+      <div className="hidden lg:flex  cursor-pointer items-center justify-center relative shadow-sm rounded-full shadow-gray-600 border hover:shadow-lg">
         <div className="py-4 w-[20rem] m-3 rounded-full outline-0"></div>
         <div className="flex justify-between  absolute w-full pr-16 pl-2">
           <button className=" w-full font-semibold ">Anywhere </button>
@@ -38,12 +38,12 @@ const Navbar = () => {
 
       {/* 3rd part end section */}
       <div className="flex items-center pr-2 font-semibold text-gray-600">
-        <div className="flex items-center mr-2">
+        <div className="hidden sm:flex items-center mr-2">
           <button className="mr-2 hover:bg-gray-100  shadow-md p-3 rounded-full">
             Airbnb your home
           </button>
-          <button>
-            <TbWorld className="mx-1 hover:bg-gray-300 shadow-lg rounded-full" />
+          <button className="p-5 hover:bg-gray-100 rounded-full">
+            <TbWorld className="mx-1 hover:bg-gray-300 shadow-lg rounded-lg" />
           </button>
         </div>
         <div className="flex items-center gap-4 border rounded-full m-5 py-4 pl-4 cursor-pointer shadow hover:shadow-lg">
