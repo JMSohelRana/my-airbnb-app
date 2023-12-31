@@ -22,15 +22,18 @@ const Navbar = () => {
       </div>
       {/* 2nd part middle section */}
       <div className="flex  items-center justify-center relative shadow-sm rounded-full shadow-gray-600 border">
-        <div className="py-2.5 w-[16rem] m-2 rounded-full outline-0"></div>
-        <div className="absolute ">
-          <button>Anywhere</button>
-          <button>Any week</button>
-          <button>Add guests</button>
+        <div className="py-4 w-[20rem] m-3 rounded-full outline-0"></div>
+        <div className="flex justify-between  absolute w-full pr-16 pl-2">
+          <button className=" w-full font-semibold ">Anywhere </button>
+          <button className=" font-semibold  w-full  border-x-2 border-gray-300">
+            {" "}
+            Any week{" "}
+          </button>
+          <button className="text-gray-500  w-full"> Add guests</button>
         </div>
-        <div className="bg-[#ff5a60] p-2 mr-1 color-white rounded-full">
-          <CgSearch className="font-bold " />
-        </div>
+        <button className="bg-[#ff5a60] p-2 mr-1 color-white rounded-full">
+          <CgSearch className="text-white" />
+        </button>
       </div>
 
       {/* 3rd part end section */}
