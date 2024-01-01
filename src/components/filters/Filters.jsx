@@ -9,6 +9,7 @@ import { GiForest } from "react-icons/gi";
 import { GiFeatheredWing } from "react-icons/gi";
 import { FaTree } from "react-icons/fa";
 import { MdOutlineRoomPreferences } from "react-icons/md";
+import Filter from "./Filter";
 
 const Filters = () => {
   const searching = [
@@ -23,7 +24,15 @@ const Filters = () => {
     { name: "cave", icon: <FaTree /> },
     { name: "cave", icon: <MdOutlineRoomPreferences /> },
   ];
-  return <div className=" sm:mx-6 md:mx-10 lg:mx-12">Filters</div>;
+  return (
+    <div className=" sm:mx-6 md:mx-10 lg:mx-12">
+      <div className="">
+        {searching.map((filter) => (
+          <Filter filter={filter}></Filter>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Filters;
