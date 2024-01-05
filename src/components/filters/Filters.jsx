@@ -14,19 +14,27 @@ import Filter from "./Filter";
 const Filters = () => {
   const searching = [
     { name: "cave", icon: <GiMountainCave /> },
-    { name: "cave", icon: <GiFlintSpark /> },
-    { name: "cave", icon: <GiHutsVillage /> },
-    { name: "cave", icon: <FaPlaneDeparture /> },
-    { name: "cave", icon: <GrBus /> },
-    { name: "cave", icon: <GiSnowflake2 /> },
-    { name: "cave", icon: <GiForest /> },
-    { name: "cave", icon: <GiFeatheredWing /> },
-    { name: "cave", icon: <FaTree /> },
-    { name: "cave", icon: <MdOutlineRoomPreferences /> },
+    { name: "countryside", icon: <GiFlintSpark /> },
+    { name: "village", icon: <GiHutsVillage /> },
+    { name: "plane", icon: <FaPlaneDeparture /> },
+    { name: "bus", icon: <GrBus /> },
+    { name: "caves", icon: <GiSnowflake2 /> },
+    { name: "forest", icon: <GiForest /> },
+    { name: "jungle", icon: <GiFeatheredWing /> },
+    { name: "tree", icon: <FaTree /> },
+    { name: "room", icon: <MdOutlineRoomPreferences /> },
+    { name: "mountain", icon: <GiMountainCave /> },
+    { name: "country", icon: <GiFlintSpark /> },
+
+    { name: "airplane", icon: <FaPlaneDeparture /> },
+    { name: "airbus", icon: <GrBus /> },
+
+    { name: "wing", icon: <GiFeatheredWing /> },
+    { name: "trees", icon: <FaTree /> },
   ];
   return (
     <div className=" sm:mx-6 md:mx-10 lg:mx-12">
-      <div className="">
+      <div className="flex scroll-smooth overflow-y-auto  gap-4 mt-2 ">
         {searching.map((filter) => (
           <Filter filter={filter}></Filter>
         ))}
