@@ -23,7 +23,7 @@ const Product = ({ product }) => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="">
+        <div className="ml-2">
           <p className="font-semibold">{title}</p>
           <span className="text-gray-600 font-light">${price} night</span>
           <br />
