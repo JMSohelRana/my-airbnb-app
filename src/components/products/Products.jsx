@@ -1,5 +1,5 @@
 import React from "react";
-import countryside1 from "../../images/countryside/flowers.jpg";
+
 import countryside2 from "../../images/countryside/hills.jpg";
 import countryside3 from "../../images/countryside/field.jpg";
 import countryside4 from "../../images/countryside/landscape.jpg";
@@ -11,21 +11,118 @@ const Products = () => {
   const products = [
     {
       title: "Male,Maldives",
-      image: countryside1,
-
+      images: [countryside3, countryside5, countryside2, countryside4],
       price: "57",
+      date: "Feb 14-21",
     },
-    { title: "Rajshahi,Bangladesh", image: countryside2, price: "60" },
-    { title: "Punakha,Bhutan", image: countryside3, price: "50" },
-    { title: "Kalingpong,India", image: countryside4, price: "80" },
-    { title: "Digha,India", image: countryside5, price: "71" },
-    { title: "Takdah,India", image: countryside6, price: "56" },
+    {
+      title: "Rajshahi,Bangladesh",
+      images: [countryside2, countryside5, countryside2, countryside4],
+      price: "60",
+      date: "Jan 15-21",
+    },
+    {
+      title: "Punakha,Bhutan",
+      images: [countryside3, countryside5, countryside2, countryside4],
+      price: "50",
+      date: "Feb 1-10",
+    },
+    {
+      title: "Kalingpong,India",
+      images: [countryside4, countryside5, countryside2, countryside4],
+      price: "80",
+      date: "Feb 21-27",
+    },
+    {
+      title: "Digha,India",
+      images: [countryside5, countryside5, countryside2, countryside4],
+      price: "71",
+      date: "Feb 5-9",
+    },
+    {
+      title: "Takdah,India",
+      images: [countryside6, countryside5, countryside2, countryside4],
+      price: "56",
+      date: "Feb 1-21",
+    },
+    {
+      title: "Male,Maldives",
+      images: [countryside3, countryside5, countryside2, countryside4],
+      price: "57",
+      date: "Feb 14-21",
+    },
+    {
+      title: "Rajshahi,Bangladesh",
+      images: [countryside2, countryside5, countryside2, countryside4],
+      price: "60",
+      date: "Jan 15-21",
+    },
+    {
+      title: "Punakha,Bhutan",
+      images: [countryside3, countryside5, countryside2, countryside4],
+      price: "50",
+      date: "Feb 1-10",
+    },
+    {
+      title: "Kalingpong,India",
+      images: [countryside4, countryside5, countryside2, countryside4],
+      price: "80",
+      date: "Feb 21-27",
+    },
+    {
+      title: "Digha,India",
+      images: [countryside5, countryside5, countryside2, countryside4],
+      price: "71",
+      date: "Feb 5-9",
+    },
+    {
+      title: "Takdah,India",
+      images: [countryside6, countryside5, countryside2, countryside4],
+      price: "56",
+      date: "Feb 1-21",
+    },
+    {
+      title: "Male,Maldives",
+      images: [countryside3, countryside5, countryside2, countryside4],
+      price: "57",
+      date: "Feb 14-21",
+    },
+    {
+      title: "Rajshahi,Bangladesh",
+      images: [countryside2, countryside5, countryside2, countryside4],
+      price: "60",
+      date: "Jan 15-21",
+    },
+    {
+      title: "Punakha,Bhutan",
+      images: [countryside3, countryside5, countryside2, countryside4],
+      price: "50",
+      date: "Feb 1-10",
+    },
+    {
+      title: "Kalingpong,India",
+      images: [countryside4, countryside5, countryside2, countryside4],
+      price: "80",
+      date: "Feb 21-27",
+    },
+    {
+      title: "Digha,India",
+      images: [countryside5, countryside5, countryside2, countryside4],
+      price: "71",
+      date: "Feb 5-9",
+    },
+    {
+      title: "Takdah,India",
+      images: [countryside6, countryside5, countryside2, countryside4],
+      price: "56",
+      date: "Feb 1-21",
+    },
   ];
   return (
     <div className="pt-3 ml-2 ">
-      <div className="sm:grid grid-cols-1 lg:grid grid-cols-3 gap-4 ">
-        {products.map((product) => (
-          <Product product={product}></Product>
+      <div className="gap-6 sm:grid grid-cols-1 lg:grid grid-cols-3 ">
+        {products.map((product, index) => (
+          <Product product={product} key={index}></Product>
         ))}
       </div>
     </div>
